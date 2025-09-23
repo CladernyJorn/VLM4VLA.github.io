@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-    content="Video Prediction Policy: A Generalist Robot Policy with Predictive Visual Representations">
-  <meta name="keywords" content="Video generation, Imitation Learning, Robotic Manipulation">
+    content="UniCoD: Enhancing Robot Policy via Unified Continuous and Discrete Representation Learning">
+  <meta name="keywords" content="Robot Learning, Vision-Language-Action Models, Multimodal Learning, Robot Manipulation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    Video Prediction Policy: A Generalist Robot Policy with Predictive Visual Representations
+    UniCoD: Enhancing Robot Policy via Unified Continuous and Discrete Representation Learning
   </title>
 
   <!-- Thumbnail for social media sharing -->
@@ -56,49 +56,29 @@
     <div class="container is-fullhd">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <img src="media/images/title-3.png" alt="ReKep" style="display: block; margin: 0 auto; width: 70%">
-          <br>
-          <!-- <h1 class="title is-1 publication-title" style="color:#775295;">in Imitation Learning for Robotic Manipulation</h1> -->
+          <h1 class="title is-1 publication-title" style="color:#6510ad; margin-bottom: 0.5em;">UniCoD</h1>
+          <h2 class="subtitle is-3" style="color:#333; margin-bottom: 1em;">Enhancing Robot Policy via Unified Continuous and Discrete Representation Learning</h2>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a target="_blank">Yucheng Hu</a><sup>1,3,4*</sup>,
+              <a target="_blank">Antiquus S. Hippocampus</a><sup>1*</sup>,
             </span>
             <span class="author-block">
-              <a target="_blank" href="https://robert-gyj.github.io/">Yanjiang Guo</a><sup>1,4*</sup>,
+              <a target="_blank">Natalia Cerebro</a><sup>1*</sup>,
             </span>
             <span class="author-block">
-              <a target="_blank">Pengchao Wang</a><sup>5</sup>,
+              <a target="_blank">Amelie P. Amygdale</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a target="_blank">Xiaoyu Chen</a><sup>1,4</sup>,
+              <a target="_blank">Ji Q. Ren</a><sup>2</sup>,
             </span>
             <span class="author-block">
-              <a target="_blank">Yen-Jen Wang</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a target="_blank">Jianke Zhang</a><sup>1,4</sup>
-            </span>
-          </div>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a target="_blank">Koushil Sreenath</a><sup>2†</sup>,
-            </span>
-            <span class="author-block">
-              <a target="_blank">Chaochao Lu</a><sup>3†</sup>,
-            </span>
-            <span class="author-block">
-              <a target="_blank">Jianyu Chen</a><sup>1,4,5†</sup>
+              <a target="_blank">Yevgeny LeNet</a><sup>2</sup>
             </span>
           </div>
 
           <div class="is-size-5 affiliation">
-            <sup>1</sup>Tsinghua University,
-            <sup>2</sup>UC Berkeley,
-            <sup>3</sup>Shanghai Artificial Intelligence Laboratory,
-          </div>
-          <div class="is-size-5 affiliation">
-            <sup>4</sup>Shanghai Qi Zhi Institute,
-            <sup>5</sup>Robot Era
+            <sup>1</sup>Cranberry-Lemon University,
+            <sup>2</sup>University of the Witwatersrand
           </div>
 
           <br>
@@ -108,14 +88,14 @@
           </div>
           <br>
           <div class="is-size-3 affiliation">
-            ICML 2025 Spotlight
+            ICLR 2026
           </div>
           <br>
           <div style="height: 2em;"></div>
 
           <div class="button-container">
-            <a href="./paper.pdf" target="_blank" class="button" style="background-color: #f2f2f2;border: transparent;"><i class="fa-light fa-file"></i>&emsp14;PDF</a>
-            <a href="https://arxiv.org/abs/2410.18647" target="_blank" class="button" style="background-color: #f2f2f2;border: transparent;"><i class="ai ai-arxiv"></i>&emsp14;arXiv</a>
+            <a href="./pi0_dino_pred.pdf" target="_blank" class="button" style="background-color: #f2f2f2;border: transparent;"><i class="fa-light fa-file"></i>&emsp14;Paper PDF</a>
+            <a href="https://github.com/UniCod-research/UniCod" target="_blank" class="button" style="background-color: #f2f2f2;border: transparent;"><i class="fa-brands fa-github"></i>&emsp14;Code</a>
             <!-- <a href="https://youtu.be/2S8YhBdLdww" target="_blank" class="button"><i class="fa-light fa-film"></i>&emsp14;Code</a> -->
             <!-- <a href="https://x.com/wenlong_huang/status/1829135436717142319" target="_blank" class="button"><i class="fa-brands fa-x-twitter"></i>&emsp14;tl;dr</a> -->
           </div>
@@ -138,7 +118,7 @@
         </div>
         <br>
         <h2 class="subtitle has-text-centered">
-        We present Video Prediction Policy <strong>(VPP)</strong>, the first generalist policy for <strong>multi-task dexterous hand manipulation</strong> !
+        We present UniCoD, a <strong>unified framework for robot learning</strong> that integrates continuous and discrete representation learning!
         </h2>
       </div>
     </div>
@@ -151,13 +131,7 @@
     <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Abstract</h2>
     <div class="content has-text-justified">
       <p>
-        Recently, video diffusion models (<strong>VDMs</strong>) have demonstrated the capability to accurately predict future image sequences, exhibiting a good
-        understanding of physical dynamics. Motivated by the strong visual prediction capabilities of VDMs, we hypothesize that they inherently possess visual representations that reflect the evolution of the       
-        physical world, 
-        which we term predictive visual representations. Building on this hypothesis, we propose the Video Prediction Policy (<strong>VPP</strong>), <strong> a generalist robotic policy conditioned on the predictive visual 
-        representations from Video diffusion models.</strong> To further enhance these representations, we incorporate diverse human or robotic manipulation datasets, employing unified video-generation training objectives. VPP 
-        consistently outperforms existing methods across two simulated and two real-world benchmarks. Notably, it achieves a 41.5% relative improvement in the Calvin ABC-D benchmark compared to the previous 
-        state-of-the-art and delivers a 31.6% increase in success rates for complex real-world dexterous manipulation tasks.
+        Joint state prediction has garnered significant attention in vision-language-action models. However, prior approaches have predominantly focused on visual signal generation, while overlooking multimodal understanding and the dynamic characterization of high-dimensional features. Recent unified models of generation and understanding have demonstrated strong capabilities in both comprehension and generation through large-scale pretraining. We posit that robotic policy learning can likewise benefit from the combined strengths of <strong>observation understanding and continuous future representation learning</strong>. Building on this insight, we introduce UniCoD, which acquires the ability to dynamically model high-dimensional visual features through pretraining on over 1M internet-scale instructional manipulation videos. Subsequently, UniCoD is fine-tuned on data collected from the robot embodiment, enabling the learning of mappings from future state representations to action tokens. Extensive experiments show our approach consistently outperforms baseline methods across both simulation environments and real-world tasks.
       </p>
     </div>
   </div>
@@ -166,8 +140,8 @@
 <br>
 <br>
 <div class="rows is-centered has-text-centered">
-  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Model architecture</h2>
-  <p class="content has-text-justified" style="margin-bottom: 0.6em">We describe the two-stage learning process of the Video Prediction Policy. Initially, we train the Text-guided Video Prediction (TVP) model across diverse manipulation datasets to harness physical knowledge from internet data; subsequently, we design networks to aggregate predictive visual representations inside the TVP model and output final robot actions. <br><br><br></b>
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Model Architecture</h2>
+  <p class="content has-text-justified" style="margin-bottom: 0.6em">We describe the two-stage learning process of UniCoD. Initially, we train the unified vision-language joint embedding model across diverse manipulation datasets to harness physical knowledge from internet data. Subsequently, we design networks to aggregate predictive visual representations inside the model and output final robot actions. <strong>UniCoD employs a Mix-of-Transformers architecture</strong> with modality-specialized experts. <br><br><br></b>
   </p>
 
   <!-- <img src="media/figures/method.jpg" class="method-image" /> -->
@@ -176,39 +150,90 @@
       <source src="media/videos/model.mp4"
               type="video/mp4">
     </video> -->
-    <img src="media/images/method.png" class="method-image" />
+    <img src="media/images/unicod_overview.png" class="method-image" />
   </div>
 </div>
 
 <br>
 <br>
 <br>
+
+<div class="rows is-centered has-text-centered">
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000;">Key Contributions</h2>
+  <div class="columns is-centered">
+    <div class="column is-four-fifths">
+      <div class="columns">
+        <div class="column">
+          <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #6510ad;">
+            <h4 class="title is-5" style="color:#6510ad;">Unified Representation Learning</h4>
+            <p class="content">We propose a unified vision-language-action (VLA) pretraining framework that integrates both discrete and continuous representations.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #6510ad;">
+            <h4 class="title is-5" style="color:#6510ad;">Two-Stage Training</h4>
+            <p class="content">We propose a two-stage training strategy that aligns action representations while preserving the capabilities of the original pretrained model.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #6510ad;">
+            <h4 class="title is-5" style="color:#6510ad;">State-of-the-Art Performance</h4>
+            <p class="content">Our best-performing model achieves state-of-the-art results across both simulated and real-world environments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
 <br>
 
 <div class="rows is-centered has-text-centered">
-  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Experiment</h2>
-  <p class="content has-text-justified" style="margin-bottom: 0.6em">We conduct extensive experiments on both simulated and real-world robotic tasks to evaluate the performance of the video prediction policy (<strong>VPP</strong>). The simulated environments include the CALVIN benchmark and MetaWorld benchmark, while the real-world tasks encompass Panda arm manipulation and XHand dexterous hand manipulation. <br><br><br></b>
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Experiments</h2>
+  <p class="content has-text-justified" style="margin-bottom: 0.6em">We conduct extensive experiments on both simulated and real-world robotic tasks to evaluate the performance of <strong>UniCoD</strong>. The simulated environments include the CALVIN benchmark and SimplerEnv benchmark, while the real-world tasks encompass Franka arm manipulation and XArm dexterous hand manipulation. UniCoD achieves <strong>state-of-the-art performance</strong> across all environments. <br><br><br></b>
   </p>
    
   <div class="rows is-centered has-text-centered">
-  <h2 class="title is-3" style="color:#6510ad;">Real-world Setup</h2>
-  <img src="media/images/Real.png" class="method-image" />
+  <h2 class="title is-3" style="color:#6510ad;">Real-world Experimental Setup</h2>
+  <img src="media/images/unicod_environments.png" class="method-image" />
   </div>
   <br>
   <br>
   <br>
   <div class="rows is-centered has-text-centered">
   <h2 class="title is-3" style="color:#6510ad;">Quantitative Results</h2>
-  <img src="media/images/Metric.png" class="method-image" />
+  <p class="content has-text-justified" style="margin-bottom: 1em;">
+    UniCoD achieves <strong>71.0%</strong> success rate on SimplerEnv-WindowX and <strong>78.4%</strong> success rate on SimplerEnv-Google Robot, reaching state-of-the-art performance on both platforms. On the CALVIN ABC-D benchmark, UniCoD also performs exceptionally well, surpassing all baseline methods.
+  </p>
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <h3 class="title is-4" style="color:#6510ad;">Simulation Results</h3>
+      <p>On the SimplerEnv benchmark, UniCoD surpasses existing state-of-the-art methods across multiple tasks.</p>
+    </div>
+    <div class="column is-half">
+      <h3 class="title is-4" style="color:#6510ad;">Real-world Results</h3>
+      <p>On both Franka arm and XArm dexterous hand platforms, UniCoD achieves the highest success rates.</p>
+    </div>
+  </div>
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <img src="media/images/unicod_franka_results.png" class="method-image" />
+    </div>
+    <div class="column is-half">
+      <img src="media/images/unicod_xarm_results.png" class="method-image" />
+    </div>
+  </div>
   </div>
 </div>
 
 <br>
 
 <div class="rows is-centered has-text-centered">
-  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Tool-use Task Rollouts Visualization</h2>
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Tool-use Task Demonstrations</h2>
   <p class="content" style="text-align: left">
-    On the dexterous hand platform, we collected <strong>4k</strong> trajectories over <strong>100+</strong> tasks of <strong>13</strong> categories, including placing, cup-upright, relocating, stacking, passing, pressing, unplugging, opening, and complex tool using. Here we first show the chanllenging tool-use tasks. <strong>All tasks below are run with single generalist policy with different instructions.</strong>
+    On the dexterous hand platform, we collected <strong>4k</strong> trajectories over <strong>100+</strong> tasks of <strong>13</strong> categories, including placing, cup-upright, relocating, stacking, passing, pressing, unplugging, opening, and complex tool using. Here we first show the challenging tool-use tasks. <strong>All tasks below are run with single generalist policy with different instructions.</strong>
   </p>
 
   <div class="container block is-centered">
@@ -435,6 +460,9 @@
 <br>
 <div class="rows is-centered has-text-centered">
   <h2 class="title is-3" style="color:#000000;">Hardware Setup</h2>
+  <p class="content has-text-justified" style="margin-bottom: 1em;">
+    We evaluate UniCoD's performance on multiple robotic platforms, including the Franka Emika Panda arm and XArm with 12-DOF X-Hand dexterous hand. These platforms are capable of executing various complex manipulation tasks.
+  </p>
   <img src="media/images/hardware-setups.png" class="method-image" height="70%" width="70%" />
 </div>
 
@@ -486,3 +514,5 @@
 
 </body>
 </html>
+
+
