@@ -3,23 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-    content="UniCoD: Enhancing Robot Policy via Unified Continuous and Discrete Representation Learning">
-  <meta name="keywords" content="Robot Learning, Vision-Language-Action Models, Multimodal Learning, Robot Manipulation">
+    content="VLM4VLA: Revisiting Vision-Language Models in Vision-Language-Action Models">
+  <meta name="keywords" content="Vision-Language Models, Robot Learning, VLA, Multimodal Learning, Robot Manipulation, Embodied AI">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>
-    UniCoD: Enhancing Robot Policy via Unified Continuous and Discrete Representation Learning
+    VLM4VLA: Revisiting Vision-Language-Models in Vision-Language-Action models
   </title>
 
   <!-- Thumbnail for social media sharing -->
-  <meta property="og:image" content="media/images/dog_logo.png">
+  <meta property="og:image" content="VLM4VLA/fig/og.png">
 
   <!-- Favicon -->
-  <link rel="icon" href="media/images/dog_logo.png" type="image/jpeg">
+  <link rel="icon" href="VLM4VLA/fig/og.png" type="image/png">
 
   <script>
     window.dataLayer = window.dataLayer || [];
   </script>
-
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -39,7 +38,6 @@
   <link rel="stylesheet" href="./static/fontawesome/css/brands.css">
   <link rel="stylesheet" href="./static/fontawesome/css/light.css">
 
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
@@ -49,55 +47,29 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 </head>
-<!-- <body onload="updateInTheWild();updateBimanual();"> -->
 
 <section class="hero">
   <div class="hero-body" style="padding-top: 1.5%;">
     <div class="container is-fullhd">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title" style="color:#6510ad; margin-bottom: 0.5em;">UniCoD</h1>
-          <h2 class="subtitle is-3" style="color:#333; margin-bottom: 1em;">Enhancing Robot Policy via Unified Continuous and Discrete Representation Learning</h2>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a target="_blank">Antiquus S. Hippocampus</a><sup>1*</sup>,
-            </span>
-            <span class="author-block">
-              <a target="_blank">Natalia Cerebro</a><sup>1*</sup>,
-            </span>
-            <span class="author-block">
-              <a target="_blank">Amelie P. Amygdale</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a target="_blank">Ji Q. Ren</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a target="_blank">Yevgeny LeNet</a><sup>2</sup>
-            </span>
+          <h1 class="title is-1 publication-title" style="color:#2563eb; margin-bottom: 0.5em;">VLM4VLA</h1>
+          <h2 class="subtitle is-3" style="color:#333; margin-bottom: 1em;">Revisiting Vision-Language Models in Vision-Language-Action Models</h2>
+          <div class="is-size-4 publication-authors" style="color: #666; margin-bottom: 1.5em;">
+            Anonymous Submission
           </div>
 
-          <div class="is-size-5 affiliation">
-            <sup>1</sup>Cranberry-Lemon University,
-            <sup>2</sup>University of the Witwatersrand
-          </div>
-
-          <br>
-          <div class="affiliation-note">
-            <sup>*</sup> indicates equal contributions,
-            <sup>†</sup> indicates corresponding authors
-          </div>
-          <br>
-          <div class="is-size-3 affiliation">
+          <!-- <div class="is-size-3 affiliation">
             ICLR 2026
-          </div>
-          <br>
+          </div> -->
+          <!-- <br> -->
           <div style="height: 2em;"></div>
 
           <div class="button-container">
-            <a href="./pi0_dino_pred.pdf" target="_blank" class="button" style="background-color: #f2f2f2;border: transparent;"><i class="fa-light fa-file"></i>&emsp14;Paper PDF</a>
-            <a href="https://github.com/UniCod-research/UniCod" target="_blank" class="button" style="background-color: #f2f2f2;border: transparent;"><i class="fa-brands fa-github"></i>&emsp14;Code</a>
-            <!-- <a href="https://youtu.be/2S8YhBdLdww" target="_blank" class="button"><i class="fa-light fa-film"></i>&emsp14;Code</a> -->
-            <!-- <a href="https://x.com/wenlong_huang/status/1829135436717142319" target="_blank" class="button"><i class="fa-brands fa-x-twitter"></i>&emsp14;tl;dr</a> -->
+            <!-- <a href="./VLM4VLA/iclr2026_conference.pdf" target="_blank" class="button" style="background-color: #f2f2f2;border: transparent;"><i class="fa-light fa-file"></i>&emsp14;Paper PDF</a> -->
+            <a href="https://github.com/VLM4VLA/VLM4VLA" target="_blank" class="button" style="background-color: #f2f2f2;border: transparent;font-size: 1em; padding: 0em 20em;"><i class="fa-brands fa-github"></i>&emsp14;Codes are provided in Supplementary Material, which will be released soon.</a>
+            <!-- <a href="https://arxiv.org/abs/2501.00000" target="_blank" class="button" style="background-color: #f2f2f2;border: transparent;"><i class="fa-light fa-globe"></i>&emsp14;arXiv</a> -->
+            <!-- <a href="#bibtex" class="button" style="background-color: #f2f2f2;border: transparent;"><i class="fa-light fa-quote-left"></i>&emsp14;Citation</a> -->
           </div>
         </div>
       </div>
@@ -109,20 +81,13 @@
   <div class="container is-max-widescreen">
     <div class="hero-body">
       <div class="container">
-        <div class="columns is-vcentered  is-centered">
-          <video id="teaser" autoplay muted loop controls height="100%" width="100%">
-            <source src="media/videos/v1.0.0.mp4"
-                    type="video/mp4">
-          </video>
-          </br>
-        </div>
-        <br>
         <h2 class="subtitle has-text-centered">
-        We present UniCoD, a <strong>unified framework for robot learning</strong> that integrates continuous and discrete representation learning!
+        We propose <strong>VLM4VLA</strong>, a unified training and evaluation framework designed for the systematic study of Vision-Language Models' impact on Vision-Language-Action model performance.
         </h2>
       </div>
     </div>
   </div>
+</section>
 
 <br>
 <div class="container is-max-widescreen">
@@ -131,54 +96,47 @@
     <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Abstract</h2>
     <div class="content has-text-justified">
       <p>
-        Joint state prediction has garnered significant attention in vision-language-action models. However, prior approaches have predominantly focused on visual signal generation, while overlooking multimodal understanding and the dynamic characterization of high-dimensional features. Recent unified models of generation and understanding have demonstrated strong capabilities in both comprehension and generation through large-scale pretraining. We posit that robotic policy learning can likewise benefit from the combined strengths of <strong>observation understanding and continuous future representation learning</strong>. Building on this insight, we introduce UniCoD, which acquires the ability to dynamically model high-dimensional visual features through pretraining on over 1M internet-scale instructional manipulation videos. Subsequently, UniCoD is fine-tuned on data collected from the robot embodiment, enabling the learning of mappings from future state representations to action tokens. Extensive experiments show our approach consistently outperforms baseline methods across both simulation environments and real-world tasks.
+        By integrating Vision-Language Models (VLMs) with their powerful multi-modal understanding capabilities, Vision-Language-Action (VLA) policies have demonstrated promising performance in various tasks.
+        Recent work has largely focused on designing more sophisticated action networks and introducing diverse auxiliary training tasks, showcasing the effectiveness and generalization potential of VLA methods.
+        However, the performance of VLAs is likely constrained by the underlying VLM backbone, which typically constitutes the largest part of the model.
+        Furthermore, a lack of understanding of the foundational capabilities of these VLMs within the VLA context makes it difficult to discern whether performance gains are attributable to the complex architectural designs or the backbone itself.
+        To bridge this gap in understanding, we introduce <strong>VLM4VLA</strong>, a unified training and evaluation framework designed for the systematic study of the VLM's impact on VLA performance.
+        We designed a minimalist yet effective network architecture to adapt VLMs into VLAs, then conducted over 100 experiments under strictly controlled and identical settings to evaluate the performance of VLAs built upon seven advanced VLMs and seven different auxiliary multimodal tasks.
+        Contrary to common expectations, we find that models excelling on general-purpose VQA tasks do not necessarily yield better VLA performance.
+        For instance, we find that Kosmos (1.7B) outperforms Qwen-2.5VL (3.8B) and Paligemma (2.9B) in multiple environments.
+        Moreover, beyond the ability to solve embodied tasks, VLAs also place high demands on the general skills of the VLM.
+        Our findings reveal a significant gap between the current state of VLMs and their application in VLAs, a gap that necessitates collaborative efforts from both research communities to address.
       </p>
     </div>
   </div>
 </div>
-
 <br>
-<br>
-<div class="rows is-centered has-text-centered">
-  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Model Architecture</h2>
-  <p class="content has-text-justified" style="margin-bottom: 0.6em">We describe the two-stage learning process of UniCoD. Initially, we train the unified vision-language joint embedding model across diverse manipulation datasets to harness physical knowledge from internet data. Subsequently, we design networks to aggregate predictive visual representations inside the model and output final robot actions. <strong>UniCoD employs a Mix-of-Transformers architecture</strong> with modality-specialized experts. <br><br><br></b>
-  </p>
-
-  <!-- <img src="media/figures/method.jpg" class="method-image" /> -->
-  <div class="columns is-vcentered  is-centered">
-    <!-- <video id="teaser" autoplay muted loop  height="90%" width="90%">
-      <source src="media/videos/model.mp4"
-              type="video/mp4">
-    </video> -->
-    <img src="media/images/unicod_overview.png" class="method-image" />
-  </div>
+<div class="columns is-vcentered is-centered">
+  <img src="media/images/mainchart.png" class="method-image" style="width: 60%;" alt="VLM4VLA Framework Overview" />
 </div>
 
 <br>
-<br>
-<br>
-
 <div class="rows is-centered has-text-centered">
   <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000;">Key Contributions</h2>
   <div class="columns is-centered">
     <div class="column is-four-fifths">
       <div class="columns">
         <div class="column">
-          <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #6510ad;">
-            <h4 class="title is-5" style="color:#6510ad;">Unified Representation Learning</h4>
-            <p class="content">We propose a unified vision-language-action (VLA) pretraining framework that integrates both discrete and continuous representations.</p>
+          <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #2563eb;">
+            <h4 class="title is-5" style="color:#2563eb;">Unified Evaluation Framework</h4>
+            <p class="content">Build VLM4VLA, a scalable and fair evaluation framework that integrates different VLMs into VLAs in a unified and lightweight manner.</p>
           </div>
         </div>
         <div class="column">
-          <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #6510ad;">
-            <h4 class="title is-5" style="color:#6510ad;">Two-Stage Training</h4>
-            <p class="content">We propose a two-stage training strategy that aligns action representations while preserving the capabilities of the original pretrained model.</p>
+          <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #2563eb;">
+            <h4 class="title is-5" style="color:#2563eb;">Comprehensive Experimental Study</h4>
+            <p class="content">Conduct comprehensive experiments to study the influence of VLM backbone on embodied manipulation tasks, covering VLM architecture, post-training fine-tuning data, and vision modules.</p>
           </div>
         </div>
         <div class="column">
-          <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #6510ad;">
-            <h4 class="title is-5" style="color:#6510ad;">State-of-the-Art Performance</h4>
-            <p class="content">Our best-performing model achieves state-of-the-art results across both simulated and real-world environments.</p>
+          <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #2563eb;">
+            <h4 class="title is-5" style="color:#2563eb;">Practical Insights</h4>
+            <p class="content">Analyze experimental results to provide practical insights, offering reference for backbone selection and performance baseline for the VLA community.</p>
           </div>
         </div>
       </div>
@@ -191,328 +149,600 @@
 <br>
 
 <div class="rows is-centered has-text-centered">
-  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Experiments</h2>
-  <p class="content has-text-justified" style="margin-bottom: 0.6em">We conduct extensive experiments on both simulated and real-world robotic tasks to evaluate the performance of <strong>UniCoD</strong>. The simulated environments include the CALVIN benchmark and SimplerEnv benchmark, while the real-world tasks encompass Franka arm manipulation and XArm dexterous hand manipulation. UniCoD achieves <strong>state-of-the-art performance</strong> across all environments. <br><br><br></b>
-  </p>
-   
-  <div class="rows is-centered has-text-centered">
-  <h2 class="title is-3" style="color:#6510ad;">Real-world Experimental Setup</h2>
-  <img src="media/images/unicod_environments.png" class="method-image" />
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">🔍 Most Surprising Finding</h2>
+  <div class="columns is-centered">
+    <div class="column is-four-fifths">
+      <div class="highlight-box">
+        <h4 class="title is-5" style="margin-bottom: 1em;"></h4>
+        <p>
+          We find that the performance requirements for VLMs in embodied manipulation tasks do not fully align with their VQA capabilities. Specifically, and contrary to common expectations,
+          <strong>VLMs that perform well on general VQA benchmarks are not necessarily better when used in VLAs</strong>.
+          For instance, we find that Kosmos (1.7B) outperforms Qwen-2.5VL (3.8B) and Paligemma (2.9B) in multiple environments.
+        </p>
+        <p>
+          Furthermore, in our experiments where we post-train Qwen-2.5VL on various auxiliary Embodied-QA tasks, we discover that fine-tuning on most of these tasks leads to a performance degradation in the resulting VLA.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="columns is-vcentered is-centered">
+    <img src="media/images/vlm_comparison.png" class="method-image" style="width: 40%;" alt="VLM Performance Comparison" />
   </div>
   <br>
-  <br>
-  <br>
-  <div class="rows is-centered has-text-centered">
-  <h2 class="title is-3" style="color:#6510ad;">Quantitative Results</h2>
+</div>
+
+<br>
+
+<br>
+<br>
+<div class="rows is-centered has-text-centered">
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000; max-width: 800px; margin-left: auto; margin-right: auto;">Study Design</h2>
+  <p class="content has-text-centered" style="margin-bottom: 0.6em; max-width: 800px; margin-left: auto; margin-right: auto;">
+    Our research goal is to conduct a comprehensive and fair comparison of the performance of various VLMs on end-to-end manipulation tasks. To this end, our research design adheres to the following principles:
+    <br><br>
+    <strong>🎯 Fairness and Reproducibility:</strong> We employ a consistent model architecture and training/testing settings across multiple simulation environments to ensure fair and reproducible comparisons.
+    <br><br>
+    <strong>⚡ Minimalist Design:</strong> We encapsulate VLMs within a simple yet effective VLA framework, thereby minimizing the influence of complex, extraneous policy designs on the comparison.
+    <br><br>
+    <strong>🧠 Leveraging Inherent Knowledge:</strong> The VLA design fully leverages the inherent knowledge of the VLM. Crucially, we ensure that the input sequence format is consistent with what each VLM was exposed to during its instruction-SFT phase.
+    We exclude any robotic priors beyond vision and language, such as proprioceptive state, tactile feedback, or environmental rewards.
+    <br><br>
+  </p>
+</div>
+
+<br>
+<br>
+
+<div class="rows is-centered has-text-centered">
+  <h4 class="title is-4" style="margin-bottom: 0.5em; color:#000000">VLM4VLA Network Architecture</h2>
+  <div class="columns is-centered">
+    <div class="column is-four-fifths">
+      <p class="content has-text-justified" style="margin-bottom: 1.5em;">
+        We detail the method for constructing a consistent VLA from various VLMs within the VLM4VLA framework. Our objective is to build a VLA architecture that is generic across different VLMs, lightweight, and capable of fully leveraging the VLM's intrinsic knowledge.
+      </p>
+      
+      <div class="box" style="background-color: #f8f9fa; border-left: 4px solid #28a745; margin-bottom: 2em;">
+        <!-- <h4 class="title is-5" style="color:#28a745; margin-bottom: 1em;">Core Design Philosophy</h4> -->
+        <div class="content has-text-justified">
+          <p>
+            <strong>🔍 Learnable Action Query Token:</strong> We introduce a learnable action query token to extract embodiment-related knowledge from the VLM. The representation of this token is then decoded into an action chunk.
+          </p>
+          <p>
+            <strong>📝 Input Format Adaptation:</strong> To align with the pre-training input format of each model, we adapt a unique token concatenation scheme for each VLM4VLA instance.
+          </p>
+          <p>
+            <strong>⚙️ Minimalist Policy Head:</strong> We take the last_hidden_state of the &lt;ActionQuery&gt; token, as encoded by the VLM, and decode it into an action chunk using a small MLP-based policy head.
+          </p>
+        </div>
+      </div>
+      
+      <div class="has-text-centered" style="background-color: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 1.5em;">
+        <p style="font-family: 'Courier New', monospace; font-size: 1.1em; color: #2c3e50;">
+          <strong>action = MLP(VLM([&lt;img&gt; ... &lt;img&gt; &lt;text&gt; ... &lt;text&gt; &lt;ActionQuery&gt;]))</strong>
+        </p>
+        <p style="font-size: 0.9em; color: #666; margin-top: 0.5em;">
+          where &lt;img&gt; represents the visual embeddings from the vision encoder, &lt;text&gt; corresponds to the language embeddings containing the instruction and any additional prompts, and &lt;ActionQuery&gt; is the learnable action query token.
+        </p>
+      </div>
+      
+      <div class="box" style="background-color: #fff3cd; border-left: 4px solid #ffc107;">
+        <h4 class="title is-5" style="color:#856404; margin-bottom: 1em;">Training Objective</h4>
+        <p class="content has-text-justified">
+          During training, we finetune all parameters of the VLM, including the LLM, the vision encoder, and the word embeddings. We deliberately avoid widely-used objectives like diffusion loss and flow-matching loss,
+          as these losses introduce significant stochasticity during inference. We utilize a maximum likelihood imitation learning objective, optimizing the desired relative position of the end-effector via a regression loss,
+          and the discrete status of the end-effector with a binary cross-entropy loss.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<br>
+
+<div class="rows is-centered has-text-centered">
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Detailed Experiments</h2>
+  <div class="columns is-centered">
+    <div class="column is-four-fifths">
+      <p class="content has-text-justified" style="margin-bottom: 1.5em;">
+        To ensure the reproducibility and fairness of our experiments, we test in three simulation environments, selecting the most challenging scenarios as our evaluation benchmarks.
+      </p>
+      
+      <div class="columns">
+        <div class="column">
+          <div class="box" style="background-color: #e8f5e8; border-left: 4px solid #28a745;">
+            <h4 class="title is-5" style="color:#28a745;">Calvin ABC-D</h4>
+            <p class="content has-text-justified">
+              We evaluate on the Calvin ABC-D task. We train the model for 30k steps on the ABC splits and evaluate it on 1000 task sequences, each with a length of 5.
+              During testing, the policy is required to complete a sequence of 1-5 tasks. This setup challenges the VLM's ability to generalize to novel visual scenes.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box" style="background-color: #fff3cd; border-left: 4px solid #ffc107;">
+            <h4 class="title is-5" style="color:#856404;">SimplerEnv Bridge</h4>
+            <p class="content has-text-justified">
+              To better differentiate the performance of various VLM-based policies, we choose the WindowX (Bridge V2) task suite, which is more challenging than the Fractal suite.
+              We train for 50k steps on Bridge-V2 and run 24 trials with random initializations for each of the four scenes.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box" style="background-color: #e3f2fd; border-left: 4px solid #2196f3;">
+            <h4 class="title is-5" style="color:#1976d2;">Libero-Long</h4>
+            <p class="content has-text-justified">
+              Among the five task suites in Libero, we evaluate different models on the most challenging suite Libero-Long, which consists of 10 tasks involving a variety of objects and skills.
+              All models are trained for 50k steps on the training split and evaluated with 50 trials with random initializations for each task.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<div class="rows is-centered has-text-centered">
+  <h4 class="title is-4" style="margin-bottom: 0.5em; color:#000000">Experimental Results</h2>
   <p class="content has-text-justified" style="margin-bottom: 1em;">
-    UniCoD achieves <strong>71.0%</strong> success rate on SimplerEnv-WindowX and <strong>78.4%</strong> success rate on SimplerEnv-Google Robot, reaching state-of-the-art performance on both platforms. On the CALVIN ABC-D benchmark, UniCoD also performs exceptionally well, surpassing all baseline methods.
+    We evaluated the performance of different VLMs across three simulation environments. The results show varying degrees of linear correlation between different evaluation environments and general VLM capabilities,
+    indicating that the performance requirements for VLMs in embodied manipulation tasks do not fully align with their VQA capabilities.
   </p>
+  
   <div class="columns is-centered">
-    <div class="column is-half">
-      <h3 class="title is-4" style="color:#6510ad;">Simulation Results</h3>
-      <p>On the SimplerEnv benchmark, UniCoD surpasses existing state-of-the-art methods across multiple tasks.</p>
-    </div>
-    <div class="column is-half">
-      <h3 class="title is-4" style="color:#6510ad;">Real-world Results</h3>
-      <p>On both Franka arm and XArm dexterous hand platforms, UniCoD achieves the highest success rates.</p>
+    <div class="column is-three-quarters">
+      <h3 class="title is-4" style="color:#2563eb; margin-bottom: 1em;">VLM Performance Comparison</h3>
+      <div class="table-container" style="overflow-x: auto;">
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr style="background-color: #2563eb; color: white;">
+              <th>Model (VLM Backbone)</th>
+              <th>Size</th>
+              <th>Calvin ABC-D ↑</th>
+              <th>SimplerEnv ↑</th>
+              <th>Libero-10 ↑</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: #e3f2fd;">
+              <td colspan="5" style="text-align: center; font-style: italic;"><strong>Expert VLA Models</strong></td>
+            </tr>
+            <tr>
+              <td>OpenVLA (Llama-2)</td>
+              <td>7.7B</td>
+              <td>2.548</td>
+              <td>4.2</td>
+              <td>53.7</td>
+            </tr>
+            <tr>
+              <td>pi0 (Paligemma-1)</td>
+              <td>3.1B</td>
+              <td>3.509</td>
+              <td>60.4</td>
+              <td>46.0</td>
+            </tr>
+            <tr style="background-color: #e8f5e8;">
+              <td colspan="5" style="text-align: center; font-style: italic;"><strong>VLM4VLA Models</strong></td>
+            </tr>
+            <tr>
+              <td>Qwen2.5VL-3B</td>
+              <td>3.8B</td>
+              <td>3.856</td>
+              <td>47.9</td>
+              <td>43.0</td>
+            </tr>
+            <tr>
+              <td>Qwen2.5VL-7B</td>
+              <td>8.3B</td>
+              <td>4.057</td>
+              <td>46.9</td>
+              <td>45.0</td>
+            </tr>
+            <tr>
+              <td>Qwen3VL-4B</td>
+              <td>4.4B</td>
+              <td>3.943</td>
+              <td>56.3</td>
+              <td>44.4</td>
+            </tr>
+            <tr>
+              <td>InternVL3.5-4B</td>
+              <td>4.7B</td>
+              <td>3.977</td>
+              <td>57.3</td>
+              <td>62.8</td>
+            </tr>
+            <tr>
+              <td>Kosmos-2</td>
+              <td>1.7B</td>
+              <td>3.096</td>
+              <td>60.4</td>
+              <td>55.0</td>
+            </tr>
+            <tr>
+              <td>Paligemma-1</td>
+              <td>2.9B</td>
+              <td>3.506</td>
+              <td>55.2</td>
+              <td>44.2</td>
+            </tr>
+            <tr>
+              <td>Paligemma-2</td>
+              <td>3.0B</td>
+              <td>3.406</td>
+              <td>57.3</td>
+              <td>46.2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
+</div>
+
+
+<br>
+
+<!-- <div class="rows is-centered has-text-centered">
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">VLM Baseline Models</h2>
   <div class="columns is-centered">
-    <div class="column is-half">
-      <img src="media/images/unicod_franka_results.png" class="method-image" />
-    </div>
-    <div class="column is-half">
-      <img src="media/images/unicod_xarm_results.png" class="method-image" />
+    <div class="column is-four-fifths">
+      <p class="content has-text-justified" style="margin-bottom: 1.5em;">
+        We evaluate several Vision-Language Models commonly used in VLA domain, with model sizes generally ranging from 1B to 10B parameters, ensuring the feasibility of extensive action-learning finetuning and rollout testing.
+      </p>
+      
+      <div class="columns is-multiline">
+        <div class="column is-half">
+          <div class="box model-card" style="background-color: #f0f8ff; border-left: 4px solid #4169e1;">
+            <h4 class="title is-6" style="color:#4169e1;">Qwen2.5VL Series<span class="performance-badge high">High Performance</span></h4>
+            <p class="content has-text-justified" style="font-size: 0.9em;">
+              Including Qwen2.5VL-3B, Qwen2.5VL-7B, and Qwen3VL-4B. These are top-tier general-purpose open-source VLMs that excel in various VQA benchmarks.
+            </p>
+          </div>
+        </div>
+        
+        <div class="column is-half">
+          <div class="box model-card" style="background-color: #f0fff0; border-left: 4px solid #32cd32;">
+            <h4 class="title is-6" style="color:#228b22;">Paligemma Series<span class="performance-badge medium">Medium Performance</span></h4>
+            <p class="content has-text-justified" style="font-size: 0.9em;">
+              Including paligemma-1 and paligemma-2. Designed for better adaptability to downstream finetuning, widely used in robotic learning tasks.
+            </p>
+          </div>
+        </div>
+        
+        <div class="column is-half">
+          <div class="box model-card" style="background-color: #fff8dc; border-left: 4px solid #daa520;">
+            <h4 class="title is-6" style="color:#b8860b;">InternVL3.5-4B<span class="performance-badge high">High Performance</span></h4>
+            <p class="content has-text-justified" style="font-size: 0.9em;">
+              Another top-tier general-purpose open-source VLM that excels in multimodal understanding tasks, with strong vision-language alignment capabilities.
+            </p>
+          </div>
+        </div>
+        
+        <div class="column is-half">
+          <div class="box model-card" style="background-color: #ffefd5; border-left: 4px solid #ff8c00;">
+            <h4 class="title is-6" style="color:#ff6347;">Kosmos-2<span class="performance-badge high">High Efficiency</span></h4>
+            <p class="content has-text-justified" style="font-size: 0.9em;">
+              Known for its excellent performance in grounding tasks, despite having the smallest parameter count (1.7B), it performs remarkably well across multiple environments.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+</div> -->
+
+<br>
+<br>
+
+<div class="rows is-centered has-text-centered">
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Impact of Auxiliary Tasks</h2>
+  <p class="content has-text-justified" style="margin-bottom: 1.5em;">
+    We study the impact of different VLM auxiliary tasks on VLA performance. Recent work has proposed using robotic data to construct VQA datasets for improving VLM backbones,
+    but few studies have investigated whether this additional continual finetuning actually benefits VLAs in downstream tasks. We construct or collect several SFT tasks for VLM, including VQA datasets and generation tasks.
+  </p>
+  
+  <div class="columns is-centered">
+    <div class="column is-four-fifths">
+      <div class="columns is-multiline">
+        <div class="column is-one-third">
+          <div class="box" style="background-color: #e8f5e8; border-left: 4px solid #28a745;">
+            <!-- <img src="media/images/robopoint.png" style="width: 100%; margin-bottom: 10px; border-radius: 6px;" alt="RoboPoint Task Examples" /> -->
+            <h4 class="title is-6" style="color:#28a745;">RoboPoint</h4>
+            <p class="content" style="font-size: 0.8em;">A pointing task dataset collected in simulator. Given an image and a target location, the model is required to output the 2D coordinates that satisfy the target requirement. Contains 1.432M samples.</p>
+          </div>
+        </div>
+        
+        <div class="column is-one-third">
+          <div class="box" style="background-color: #fff3cd; border-left: 4px solid #ffc107;">
+            <h4 class="title is-6" style="color:#856404;">Vica-332k</h4>
+            <p class="content" style="font-size: 0.8em;">A spatial understanding dataset constructed from RGB-D datasets. It covers a wide range of capabilities, including size estimation, position understanding, distance estimation, and so on.</p>
+          </div>
+        </div>
+        
+        <div class="column is-one-third">
+          <div class="box" style="background-color: #e3f2fd; border-left: 4px solid #2196f3;">
+            <h4 class="title is-6" style="color:#1976d2;">BridgeVQA</h4>
+            <p class="content" style="font-size: 0.8em;">A spatial understanding question-answering dataset annotated from Bridge-v2, Fractal, and Calvin ABC data using VQASynth.</p>
+          </div>
+        </div>
+        
+        <div class="column is-one-third">
+          <div class="box" style="background-color: #f3e5f5; border-left: 4px solid #9c27b0;">
+            <h4 class="title is-6" style="color:#7b1fa2;">Robo2VLM</h4>
+            <p class="content" style="font-size: 0.8em;">An action-oriented question-answering dataset built from 176k real robot trajectories, containing 667k VQA pairs.</p>
+          </div>
+        </div>
+        
+        <div class="column is-one-third">
+          <div class="box" style="background-color: #fce4ec; border-left: 4px solid #e91e63;">
+            <!-- <img src="media/images/robobrain.png" style="width: 100%; margin-bottom: 10px; border-radius: 6px;" alt="RoboBrain2 Dataset Examples" /> -->
+            <h4 class="title is-6" style="color:#c2185b;">RoboBrain2</h4>
+            <p class="content" style="font-size: 0.8em;">A large-scale embodied VQA dataset and a VLM finetuned on Qwen2.5VL-7B. The tasks include pointing, planning, and trajectory marking.</p>
+          </div>
+        </div>
+        
+        <div class="column is-one-third">
+          <div class="box" style="background-color: #f1f8e9; border-left: 4px solid #8bc34a;">
+            <h4 class="title is-6" style="color:#689f38;">Omni-Generation</h4>
+            <p class="content" style="font-size: 0.8em;">Integrating a diffusion model into QwenVL-7B and training on image generation, depth map generation, and semantic segmentation map generation tasks together.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="columns is-vcentered is-centered" style="margin-top: 2em;">
+    <img src="media/images/auxiliary_tasks_results.png" class="method-image" style="width: 80%;" alt="Auxiliary Tasks Performance Results" />
+  </div>
+  
+  <div class="columns is-centered" style="margin-top: 2em;">
+    <div class="column is-four-fifths">
+      <div class="box" style="background-color: #fff3cd; border-left: 4px solid #ffc107;">
+        <!-- <h4 class="title is-5" style="color:#856404;">🔍 Key Findings</h4> -->
+        <p class="content has-text-justified">
+          Overall, all models underperform the original baseline, with most exhibiting a slight degradation in performance. For Qwen2.5VL-3B, the model finetuned on Vica332k performs better than those finetuned on other datasets.
+          This could be attributed to the dataset's broad data coverage and diverse task types, which may prevent the model from overfitting to a narrow set of capabilities and consequently degrading others.
+        </p>
+        <p class="content has-text-justified">
+          <strong>Important Insight:</strong> Existing embodied VQA-style tasks do not offer a clear benefit for training end-to-end VLAs to execute downstream manipulation tasks.
+          This suggests that VLAs may require broad, general capabilities, beyond just embodied skills, to perform well on downstream tasks.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
 <br>
+<br>
 
 <div class="rows is-centered has-text-centered">
-  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Tool-use Task Demonstrations</h2>
-  <p class="content" style="text-align: left">
-    On the dexterous hand platform, we collected <strong>4k</strong> trajectories over <strong>100+</strong> tasks of <strong>13</strong> categories, including placing, cup-upright, relocating, stacking, passing, pressing, unplugging, opening, and complex tool using. Here we first show the challenging tool-use tasks. <strong>All tasks below are run with single generalist policy with different instructions.</strong>
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Importance of Vision Encoder</h2>
+  <p class="content has-text-justified" style="margin-bottom: 1em;">
+    We find that freezing the vision encoder during VLM4VLA training leads to significant performance degradation for all models on both the Calvin and Simpler benchmarks.
+    This strongly suggests that finetuning the vision encoder is crucial when adapting a VLM into a VLA.
   </p>
-
-  <div class="container block is-centered">
-    <div class="columns is-centered">
-      <div class="column is-2" style="width: 26%;">
-          <div class="select" style="display: block;">
-              <select id="env-selection" style="width: 100%;" onchange="SelectTestVideo()">
-                  <option value="env_2">Transfer liquid using a pipette</option>
-                  <option value="env_1">Use the hammer to hit the red nail</option>
-                  <option value="env_3">Grasp and use the electrical drill</option>
-                  <option value="env_4">Use the spoon to pour soup into the blue bowl</option>
-              </select>
-          </div>
+  
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <div class="table-container">
+        <table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+          <thead>
+            <tr style="background-color: #dc3545; color: white;">
+              <th>Model</th>
+              <th>Calvin ABC-D ↑</th>
+              <th>Performance Drop</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Qwen2.5VL-3B</td>
+              <td>3.856 → 2.855</td>
+              <td style="color: #dc3545;"><strong>-1.001</strong></td>
+            </tr>
+            <tr>
+              <td>Qwen2.5VL-7B</td>
+              <td>4.057 → 2.823</td>
+              <td style="color: #dc3545;"><strong>-1.234</strong></td>
+            </tr>
+            <tr>
+              <td>Paligemma-1</td>
+              <td>3.506 → 0.495</td>
+              <td style="color: #dc3545;"><strong>-3.011</strong></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div class="column is-2">
-        <button class="button is-info is-outlined" id="shuffle-video" style="width: 100%; color: #6510ad; border-color: #6510ad;">
-            <span class="icon">
-                <ion-icon name="shuffle-outline" role="img" class="md hydrated"></ion-icon>
-            </span>
-            <span>Shuffle</span>
-        </button>
-    </div>
     </div>
   </div>
+</div>
 
+<br>
+<br>
+
+
+<!-- <div class="rows is-centered has-text-centered" id="bibtex">
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">BibTeX Citation</h2>
   <div class="columns is-centered">
-    <div class="column has-text-centered">
-      <p style="text-align:center;">
-        <video id="test-video" width="80%" height="100%" controls autoplay loop muted>
-          <source src="media/videos/tools-tasks/env_2.mp4" type="video/mp4">
-        </video>
+    <div class="column is-four-fifths">
+      <div class="bibtex">
+        <pre>@inproceedings{vlm4vla2026,
+  title={VLM4VLA: Revisiting Vision-Language Models in Vision-Language-Action Models},
+  author={Anonymous},
+  booktitle={International Conference on Learning Representations},
+  year={2026}
+}</pre>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<br>
+<br>
+
+<div class="rows is-centered has-text-centered">
+  <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">Conclusions and Insights</h2>
+  <div class="columns is-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <div class="box" style="background-color: #f8f9fa; padding: 25px; border-radius: 10px;">
+          <p style="font-size: 1.1em; line-height: 1.6;">
+            Our research reveals a significant gap between the capabilities of current VLMs and the demands of VLA embodied tasks.
+            Specifically, we observe a notable discrepancy between a VLM's performance on standard VQA benchmarks and its actual effectiveness when deployed in a VLA.
+          </p>
+          <p style="font-size: 1.1em; line-height: 1.6;">
+            <strong>Core Insight</strong>: To further advance the capabilities of VLA policies, it is not enough to simply design complex action networks;
+            we must also understand how the critical VLM backbone component influences overall performance and strategically enhance it for embodied tasks.
+          </p>
+          <p style="font-size: 1.1em; line-height: 1.6;">
+            We hope that this work will inspire future research in both the VLM and VLA domains, fostering collaborative development between the two research communities.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+
+<!-- <footer class="footer" style="background-color: #f8f9fa; padding: 2rem 0;">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p style="color: #6c757d;">
+        © 2025 VLM4VLA Team. All rights reserved.
+      </p>
+      <p style="color: #6c757d;">
+        This website is built based on the <a href="https://github.com/nerfies/nerfies.github.io" target="_blank" style="color: #2563eb;">Nerfies</a> template.
       </p>
     </div>
   </div>
-</div>
-
-<br>
-<br>
-<br>
-<section class="section" style="padding: 0;">
-  <div class="container is-max-widescreen">
-
-    <div class="rows">
-
-      <div class="container has-text-centered">
-        <h2 class="title is-3" style="margin-bottom: 0.5em; color:#000000">More Tasks</h2>
-        <p class="content" style="margin-bottom: 1.5em; text-align: left;">
-          We deployed the robot in various tasks including placing, cup-upright, relocating, stacking, passing, pressing, unplugging, opening. We rollout policy with unseen objects and scenes.
-        </p>
-      </div>
-
-      <!-- <p class="content has-text-centered">
-        <span style="letter-spacing: 0.07em;">V<span style="font-variant: small-caps; font-size: 1.2em;">i</span>L<span style="font-variant: small-caps; font-size: 1.2em;">a</span></span> effectively utilizes visual feedback in an intuitive and natural way, enabling robust closed-loop planning in dynamic environments.
-      </p> -->
-      
-      <div class="video-container">
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/3.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/4.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/5.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/6.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/7.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/8.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/9.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/11.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/12.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/13.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/14.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/15.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/16.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/18.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/19.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/20.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/21.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/22.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/23.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/25.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/26.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/27.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/28.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/29.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/30.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/31.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="column has-text-centered">
-          <video id="dist2" controls muted autoplay loop controlsList="nodownload" width="100%">
-            <source src="media/videos/more-tasks/32.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-
-      <style>
-        .video-container {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-template-rows: repeat(7, auto); 
-          gap: 16px; 
-        }
-
-        .column {
-          width: 100%; 
-        }
-
-        video {
-          width: 100%;
-          height: auto; 
-        }
-      </style>
-
-    </div>
-  </div>
-</section>
-
-
-<br>
-<br>
-<br>
-<div class="rows is-centered has-text-centered">
-  <h2 class="title is-3" style="color:#000000;">Hardware Setup</h2>
-  <p class="content has-text-justified" style="margin-bottom: 1em;">
-    We evaluate UniCoD's performance on multiple robotic platforms, including the Franka Emika Panda arm and XArm with 12-DOF X-Hand dexterous hand. These platforms are capable of executing various complex manipulation tasks.
-  </p>
-  <img src="media/images/hardware-setups.png" class="method-image" height="70%" width="70%" />
-</div>
-
-
-<script>
-  document.getElementById('shuffle-video').addEventListener('click', function() {
-    var envSelect = document.getElementById('env-selection');
-    randomizeSelect(envSelect);
-    console.log("Shuffle", envSelect.value)
-    SelectTestVideo();
-  });
-
-  function randomizeSelect(selectElement) {
-    var options = selectElement.options;
-    random_move = Math.random();
-    var randomIndex = Math.floor(Math.random() * options.length);
-    selectElement.selectedIndex = randomIndex;
-  }
-
-  function SelectTestVideo() {
-    var env_id = document.getElementById("env-selection").value;
-
-    console.log("SelectTestVideo", env_id)
-    var video = document.getElementById("test-video");
-    video.src = "media/videos/tools-tasks/" + env_id + ".mp4";
-    video.play();
-  }
-</script>
+</footer> -->
 
 <style>
-  .button.is-info.is-outlined:focus,
-  .button.is-info.is-outlined:active {
-    background-color: transparent;
-    border-color: #6510ad;
-    color: #6510ad;
-    box-shadow: none;
+  .method-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .button {
+    padding: 12px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    color: #2563eb;
+  }
+  
+  .table th {
+    background-color: #2563eb;
+    color: white;
+    font-weight: 600;
+  }
+  
+  .table td, .table th {
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
   }
 
-  .button.is-info.is-outlined:hover {
-    background-color: #6510ad;
-    color: #fff;
+  .highlight-box {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin: 20px 0;
+  }
+  
+  .highlight-box h4 {
+    color: white !important;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(45deg, #2563eb, #7c3aed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .model-card {
+    transition: all 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .model-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  }
+  
+  .performance-badge {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-left: 8px;
+  }
+  
+  .performance-badge.high {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .performance-badge.medium {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .performance-badge.low {
+    background-color: #f8d7da;
+    color: #721c24;
   }
 
-  .button.is-info.is-outlined:hover .icon ion-icon,
-  .button.is-info.is-outlined:hover span {
-    color: #fff;
+  @media (max-width: 768px) {
+    .button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .table-container {
+      font-size: 0.8em;
+    }
+    
+    .model-card {
+      margin-bottom: 1rem;
+    }
   }
 </style>
 
 </body>
 </html>
-
-

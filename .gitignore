@@ -1,20 +1,2 @@
-# 排除LaTeX目录
-pi0_dino_pred/
-
-# 排除系统文件
+﻿VLM4VLA/
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# 排除编辑器文件
-*.swp
-*.swo
-*~
-
-# 排除临时文件
-*.tmp
-*.temp
